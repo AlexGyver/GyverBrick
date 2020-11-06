@@ -3,6 +3,7 @@
 ![Logo](/logo.jpg)
 
 ## Скачать релиз v1.0
+- Для работы нужна [Java](https://www.java.com/ru/download/)! 
 - [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows32.zip)
 - [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows64.zip)
 - [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux32.zip)
