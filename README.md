@@ -2,6 +2,15 @@
 Программа для создания карты для сборки картинки из лего-деталек 
 ![Logo](/logo.jpg)
 
+## Скачать релиз v1.0
+- [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows32.zip)
+- [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows64.zip)
+- [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux32.zip)
+- [Linux 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux64.zip)
+- [Linux arm64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux-arm64.zip)
+- [Linux armv6hf](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux-armv6hf.zip)
+
+
 ## Детальки
 * Пиксели 1х1 https://ali.ski/fikvAt
 * Платформа 32х32 https://ali.ski/qeFUL
