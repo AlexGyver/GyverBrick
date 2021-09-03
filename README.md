@@ -1,16 +1,16 @@
 # GyverBrick
 Программа для создания карты для сборки картинки из лего-деталек 
-![Logo](/logo.jpg)
+- v1.1 - поправлен масштаб колесом, добавлены координаты, русский интерфейс, пост-яркость
+![Logo](/gyverbrick.png)
 
-## Скачать релиз v1.0
+## Скачать релиз
 - Для работы нужна [Java](https://www.java.com/ru/download/)! 
-- [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows32.zip)
-- [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.windows64.zip)
-- [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux32.zip)
-- [Linux 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux64.zip)
-- [Linux arm64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux-arm64.zip)
-- [Linux armv6hf](https://github.com/AlexGyver/GyverBrick/releases/download/v1.0/application.linux-armv6hf.zip)
-
+- [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.windows32.zip)
+- [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.windows64.zip)
+- [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.linux32.zip)
+- [Linux 64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.linux64.zip)
+- [Linux arm64](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.linux-arm64.zip)
+- [Linux armv6hf](https://github.com/AlexGyver/GyverBrick/releases/download/v1.1/application.linux-armv6hf.zip)
 
 ## Детальки
 * Пиксели 1х1 https://ali.ski/fikvAt
