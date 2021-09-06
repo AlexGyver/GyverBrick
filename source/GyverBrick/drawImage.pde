@@ -1,12 +1,13 @@
 // применение фильтров
 PImage filtered(PImage image) {  
   image.resize(imageWidth, 0);
-  ContrastAndBrightness(image, image, contrastValue, brightnessValue);
-  //image.filter(INVERT);
   if (colorState) image.filter(GRAY);
-  //image.filter(POSTERIZE, posterizeValue);
-  QImage poster = new QImage(image, posterizeValue);
-  image = poster.getImage();
+  ContrastAndBrightness(image, image, contrastValue, brightnessValue);
+  if (colorState) image.filter(POSTERIZE, posterizeValue);
+  else {
+    QImage poster = new QImage(image, posterizeValue);    
+    image = poster.getImage();
+  }  
   return image;
 }
 
@@ -87,11 +88,11 @@ void drawImage() {
   for (int i = 0; i < resultWidth; i++) {
     for (int j = 0; j < resultHeight; j++) {
       color col = hiddenLayer.get(width/2 - resultWidth/2+i-imageXoffs, centerY - resultHeight/2+j-imageYoffs);
-      col/*or showCol*/ = color(red(col)*resultBright, green(col)*resultBright, blue(col)*resultBright);
+      col = color(red(col)*resultBright, green(col)*resultBright, blue(col)*resultBright);
       int brCol = int(constrain(brightness(col), 30, 240));
       //if (brightness(col) == 0) col = color(30);
       //if (brightness(col) == 255) col = color(250);
-      
+
 
       stroke(10);
       fill(col);
@@ -107,7 +108,7 @@ void drawImage() {
 
         stroke(0, 10);
         //fill(brCol + 5);
-        
+
         fill(fade(col, 270));
         circle(x+rectSize/2, y+rectSize/2, rectSize/2);
       }
