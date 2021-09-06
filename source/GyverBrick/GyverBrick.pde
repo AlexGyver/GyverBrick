@@ -52,7 +52,7 @@ int amounts[];
 color colors[];
 
 void setup() {  
-  surface.setTitle("GyverBrick v1.1");
+  surface.setTitle("GyverBrick v1.2");
   size(1200, 700);
   frameRate(60);
   smooth();

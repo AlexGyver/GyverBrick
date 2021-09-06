@@ -66,7 +66,7 @@ void drawImage() {
   hiddenLayer.imageMode(CENTER);
   hiddenLayer.pushMatrix();
   hiddenLayer.translate(width/2, height/2);
-  hiddenLayer.rotate(rotAngle);
+  //hiddenLayer.rotate(rotAngle);
   hiddenLayer.image(image, 0, 0);
   hiddenLayer.endDraw();    
   hiddenLayer.popMatrix();

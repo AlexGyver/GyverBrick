@@ -11,8 +11,8 @@ void GUIinit() {
   sizeSlider = cp5.addSlider("img_width").setCaptionLabel("РАЗМЕР").setPosition(10, 40).setSize(210, 25).setRange(2, 400).setValue(64).setNumberOfTickMarks(998-1).showTickMarks(false);
   cp5.getController("img_width").getCaptionLabel().setPaddingX(-55);
 
-  cp5.addSlider("img_rotate").setCaptionLabel("ВРАЩАТЬ").setPosition(10, 70).setSize(210, 25).setRange(0, 360).setValue(0);
-  cp5.getController("img_rotate").getCaptionLabel().setPaddingX(-65);
+  //cp5.addSlider("img_rotate").setCaptionLabel("ВРАЩАТЬ").setPosition(10, 70).setSize(210, 25).setRange(0, 360).setValue(0);
+  //cp5.getController("img_rotate").getCaptionLabel().setPaddingX(-65);
 
   cp5.addSlider("bright").setCaptionLabel("ЯРКОСТЬ").setPosition(10, 100).setSize(150, 25).setRange(-128, 128).setValue(0);
   cp5.getController("bright").getCaptionLabel().setPaddingX(-65);
