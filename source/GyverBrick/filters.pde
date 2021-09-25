@@ -1,3 +1,32 @@
+// ======================= ФИЛЬТР НАЙТИ КРАЯ =======================
+// https://processing.org/examples/edgedetection.html
+float[][] kernel = {
+  { -1, -1, -1}, 
+  { -1, 9, -1}, 
+  { -1, -1, -1}
+};
+
+PImage findEdges(PImage img) {
+  img.loadPixels();
+  PImage edgeImg = createImage(img.width, img.height, RGB);
+  for (int y = 1; y < img.height-1; y++) { // Skip top and bottom edges
+    for (int x = 1; x < img.width-1; x++) { // Skip left and right edges
+      float sum = 0; // Kernel sum for this pixel
+      for (int ky = -1; ky <= 1; ky++) {
+        for (int kx = -1; kx <= 1; kx++) {
+          int pos = (y + ky)*img.width + (x + kx);
+          float val = red(img.pixels[pos]);
+          sum += kernel[ky+1][kx+1] * val;
+        }
+      }
+      edgeImg.pixels[y*img.width + x] = color(sum, sum, sum);
+    }
+  }
+  edgeImg.updatePixels();
+  return edgeImg;
+}
+
+
 // ================== ФИЛЬТР ЯРКОСТЬ/КОНТРАСТ ==================
 // https://forum.processing.org/one/topic/increase-contrast-of-an-image.html
 void ContrastAndBrightness(PImage input, PImage output, float cont, float bright) {

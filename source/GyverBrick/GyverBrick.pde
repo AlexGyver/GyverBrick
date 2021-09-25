@@ -4,9 +4,11 @@
 // v1.0 - поехали
 // v1.1 - поправлен масштаб колесом, добавлены координаты, русский интерфейс, пост-яркость
 // v1.2 - улучшена квантизация для ч/б
+// v1.3 - выделение краёв
 
 // constants
 int offsetWidth = 230;     // оффсет панели управления
+int palletteOffset = 370;  // оффсет палитры
 int maxWidth = 650;
 int maxHeight = 650;
 
@@ -31,8 +33,9 @@ int centerY;
 // settings
 float rotAngle = 0;
 boolean colorState = false;
-boolean numbersFlag = false;
+boolean edgesFlag = false;
 int posterizeValue = 4;
+float blurValue = 0.5;
 float contrastValue = 1.0;
 float brightnessValue = 0;
 boolean changeFlag = true;
@@ -52,7 +55,7 @@ int amounts[];
 color colors[];
 
 void setup() {  
-  surface.setTitle("GyverBrick v1.2");
+  surface.setTitle("GyverBrick v1.3");
   size(1200, 700);
   frameRate(60);
   smooth();
@@ -78,6 +81,7 @@ void draw() {
 
 // ===============================================================
 
+
 void drawGUI() {
   // панель управления
   fill(90);
@@ -85,13 +89,13 @@ void drawGUI() {
   rect(0, 0, offsetWidth, height);
   fill(255);
   textSize(18);
-  text("Количество: "+(resultHeight*resultWidth), 10, 340);
+  text("Количество: "+(resultHeight*resultWidth), 10, palletteOffset);
   for (int i = 0; i < posterizeValue; i++) {
     stroke(0);
     fill(colors[i]);
-    rect(10, 348 + i*20, 20, 20);
+    rect(10, palletteOffset+8 + i*20, 20, 20);
     fill(255);
-    text(/*"#" + (i+1) + ": " + */amounts[i], 10+30, 365 + i*20);
+    text(/*"#" + (i+1) + ": " + */amounts[i], 10+30, palletteOffset + 25 + i*20);
   }
   //rect(0, 225, offsetWidth, 3);
   //rect(0, 440, offsetWidth, 3);

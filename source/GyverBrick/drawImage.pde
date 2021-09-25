@@ -3,11 +3,13 @@ PImage filtered(PImage image) {
   image.resize(imageWidth, 0);
   if (colorState) image.filter(GRAY);
   ContrastAndBrightness(image, image, contrastValue, brightnessValue);
+  if (blurValue > 0.0) image.filter(BLUR, blurValue);
+  if (edgesFlag) image = findEdges(image);
   if (colorState) image.filter(POSTERIZE, posterizeValue);
   else {
     QImage poster = new QImage(image, posterizeValue);    
     image = poster.getImage();
-  }  
+  }
   return image;
 }
 
@@ -100,7 +102,7 @@ void drawImage() {
       int y = int(rectY + j * rectSize - rectSize*resultHeight/2); 
       rect(x, y, rectSize, rectSize, r);
 
-      if (!numbersFlag) {
+      //if (!edgesFlag) {
         fill(0, 80);
         noStroke();
         float shift = rectSize/10.0;
@@ -111,7 +113,7 @@ void drawImage() {
 
         fill(fade(col, 270));
         circle(x+rectSize/2, y+rectSize/2, rectSize/2);
-      }
+      //}
 
       int textCol = brCol - 128;
       fill(textCol > 0 ? textCol : 255 + textCol);
@@ -127,7 +129,7 @@ void drawImage() {
         }
       }
       amounts[num]++;
-      if (numbersFlag) text(num + 1, x+rectSize*0.2, y+rectSize*0.9);
+      //if (edgesFlag) text(num + 1, x+rectSize*0.2, y+rectSize*0.9);
     }
   }
 

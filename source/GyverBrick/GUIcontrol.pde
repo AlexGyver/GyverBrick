@@ -123,6 +123,11 @@ void contr(float val) {
   changeFlag = true;
 }
 
+void blur(float val) {
+  blurValue = val;
+  changeFlag = true;
+}
+
 void rnd() {
   brightnessValue = random(-60, 60);
   contrastValue = random(0.5, 1.4);
@@ -136,8 +141,8 @@ void grayscale(boolean state) {
   changeFlag = true;
 }
 
-void numbers(boolean state) {
-  numbersFlag = !state;
+void edges(boolean state) {
+  edgesFlag = !state;
   changeFlag = true;
 }
 
