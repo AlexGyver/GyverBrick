@@ -5,7 +5,7 @@
 - v1.3 - выделение краёв
 ![Logo](/gyverbrick.png)
 
-## Скачать релиз v1.2
+## Скачать релиз v1.3
 - Для работы нужна [Java](https://www.java.com/ru/download/)! 
 - [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.windows32.zip)
 - [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.windows64.zip)
