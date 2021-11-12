@@ -3,16 +3,17 @@
 - v1.1 - поправлен масштаб колесом, добавлены координаты, русский интерфейс, пост-яркость
 - v1.2 - улучшена квантизация для ч/б
 - v1.3 - выделение краёв
+- v1.4 - дата и время в имени сохранённого файла
 ![Logo](/gyverbrick.png)
 
-## Скачать релиз v1.2
+## Скачать релиз v1.4
 - Для работы нужна [Java](https://www.java.com/ru/download/)! 
-- [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.windows32.zip)
-- [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.windows64.zip)
-- [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.linux32.zip)
-- [Linux 64](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.linux64.zip)
-- [Linux arm64](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.linux-arm64.zip)
-- [Linux armv6hf](https://github.com/AlexGyver/GyverBrick/releases/download/1.3/application.linux-armv6hf.zip)
+- [Windows 32](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.windows32.zip)
+- [Windows 64](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.windows64.zip)
+- [Linux 32](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.linux32.zip)
+- [Linux 64](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.linux64.zip)
+- [Linux arm64](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.linux-arm64.zip)
+- [Linux armv6hf](https://github.com/AlexGyver/GyverBrick/releases/download/1.4/application.linux-armv6hf.zip)
 
 ## Детальки
 * Пиксели 1х1 https://ali.ski/3Pn_Y

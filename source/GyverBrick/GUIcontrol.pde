@@ -98,7 +98,9 @@ void save_image() {
   result.endDraw();
   PImage save = createImage(result.width, result.height, RGB);
   save = result.get();
-  save.save("outputImage.bmp");
+  String stamp = str(day()) + '.' + str(month()) + '-' + str(hour()) + '.' + str(minute()) + '.' + str(second());
+  println(stamp);
+  save.save("result-" + stamp + ".bmp");
 }
 
 void img_width(int size) {
